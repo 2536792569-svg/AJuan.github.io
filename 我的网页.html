@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>王永红个人主页</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    *{ margin:0; padding:0; box-sizing:border-box; }
+    html,body{ height:100%; }
+    iframe{
+      width:100%;
+      height: calc(100% - 58px);
+      border:none;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="个人简介.html" target="pageFrame">个人简介</a>
+  <a href="学习经历.html" target="pageFrame">学习经历</a>
+  <a href="个人技能与风采.html" target="pageFrame">技能与风采</a>
+  <a href="图片分享与作品展示.html" target="pageFrame">作品展示</a>
+  <button id="musicBtn" style="margin-left:10px; background:none; border:none; color:white; font-size:18px; cursor:pointer;">🎵</button>
+</nav>
+
+<!-- 内容区域 -->
+<iframe name="pageFrame" src="个人简介.html"></iframe>
+
+<!--全局音乐-->
+<script>
+const bgm = new Audio('Taylor Swift - august.mp3');
+bgm.loop = true;
+
+const btn = document.getElementById('musicBtn');
+btn.onclick = () => {
+  if (bgm.paused) {
+    bgm.play();
+    btn.textContent = '⏸️';
+  } else {
+    bgm.pause();
+    btn.textContent = '🎵';
+  }
+};
+</script>
+
+</body>
+</html>

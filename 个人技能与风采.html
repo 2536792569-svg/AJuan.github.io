@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>技能与风采</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="section">
+        <h2>💪 个人技能</h2>
+        <div class="info-item">
+            <span>技能：</span>
+            <ul class="info-list">
+                <li>ArcGIS</li><li>Word/Excel/PPT</li><li>Python、HTML/CSS</li><li>PS</li><li>ENVI</li>
+                <li>普通话二乙</li><li>C1机动车驾驶证</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🌟 个人风采</h2>
+        <!-- 个人风采自动轮播图 -->
+        <div style="margin-top:25px;">
+           <div class="auto-carousel" style="width:100%; height:600px; border-radius:12px; overflow:hidden; position:relative; background:#f8f0ff;">
+                <img class="auto-slide" src="c1.jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0; transition:opacity 1s;">
+                <img class="auto-slide" src="c2.jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0; transition:opacity 1s;">
+                <img class="auto-slide" src="c3.jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0; transition:opacity 1s;">
+                <img class="auto-slide" src="c4.jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0; transition:opacity 1s;">
+                <img class="auto-slide" src="c5.jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0; transition:opacity 1s;">
+                <img class="auto-slide" src="c6.jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0; transition:opacity 1s;">
+                <img class="auto-slide" src="c7.jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0; transition:opacity 1s;">
+                <img class="auto-slide" src="c8.jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0; transition:opacity 1s;">
+                <img class="auto-slide" src="c9.jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0; transition:opacity 1s;">
+                <img class="auto-slide" src="c10.jpg" style="width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; opacity:0; transition:opacity 1s;">
+           </div>
+        </div>
+
+        <script>
+        // 自动轮播
+        let slides = document.querySelectorAll('.auto-slide');
+        let current = 0;
+        slides[current].style.opacity = 1;
+
+        setInterval(() => {
+           slides[current].style.opacity = 0;
+           current = (current + 1) % slides.length;
+           slides[current].style.opacity = 1;
+        }, 2000); 
+        </script>
+
+
+        <h3 style="color:#a8c0ff;">获奖经历(部分)</h3>
+        <div class="award-item">
+            <h3>2024年5月 “心镜漫步，爱心创作”心理短视频大赛三等奖</h3>
+        </div>
+        <div class="award-item">
+            <h3>2024年5月 第六期青马工程优秀学员</h3>
+        </div>
+        <div class="award-item">
+            <h3>2024年5月 第三届运动会女子1500第五名</h3>
+        </div>
+        <div class="award-item">
+            <h3>2023年11月 环保设计大赛二等奖</h3>
+        </div>
+        <div class="award-item">
+            <h3>2024年3月 罗定市优秀志愿者</h3>
+        </div>
+        <div class="award-item">
+            <h3>2024年10月 2023-2024年优秀学生干部</h3>
+        </div>
+        <div class="award-item">
+            <h3>2025年4月  微团课比赛第一名</h3>
+        </div>
+        <div class="award-item">
+            <h3>2025年5月  贵州省大学生测绘学科创新创业智能大赛——无人机航测虚拟仿真二等奖</h3>
+        </div>
+        <div class="award-item">
+            <h3>2025年6月  第四届校园体育节篮球比赛第三名</h3>
+        </div>
+        <div class="award-item">
+            <h3>2025年10月 2024-2025年三等奖学金</h3>
+        </div>
+        <div class="award-item">
+            <h3>2025年10月 2024-2025年优秀学生干部</h3>
+        </div>
+
+        <h3 style="color:#a8c0ff;">实习经历</h3>
+        <div class="award-item">
+            <h3>2025年7-8月 贵州盛隆鑫黔置业有限公司实习</h3>
+        </div>
+        <div class="award-item">
+            <h3>2026年1-2月 杭州市良渚区永旺梦乐城实习</h3>
+        </div>
+
+        <h3 style="color:#a8c0ff;margin-top:20px;">未来规划</h3>
+        <p class="text-content">努力学习专业知识，提升GIS与编程能力，坚持摄影爱好，未来成为一名优秀的地理信息从业者。</p>
+    </div>
+</div>
+
+<footer>© 2026 王永红个人主页  Welcome to my webpage!</footer>
+
+
+</body>
+</html>
